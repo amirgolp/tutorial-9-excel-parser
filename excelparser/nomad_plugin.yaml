@@ -1,0 +1,9 @@
+plugin_type: parser
+name: parsers/excel_parser
+description: |
+  This is a simple excel parser.
+mainfile_name_re: ^.*\.my-lab-excel-file\.xlsx$
+#mainfile_mime_re: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
+mainfile_mime_re: '(application)'
+parser_class_name: excelparser.MyLabExcelParser
+code_name: Example code

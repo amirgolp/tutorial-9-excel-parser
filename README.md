@@ -1,10 +1,10 @@
-# NOMAD's schema example plugin
+# NOMAD's parser example plugin
 
 ## Getting started
 
 ### Fork the project
 
-Go to the github project page https://github.com/nomad-coe/nomad-schema-plugin-example, hit
+Go to the github project page https://github.com/nomad-coe/nomad-parser-plugin-example, hit
 fork (and leave a star, thanks!). Maybe you want to rename the project while forking!
 
 ### Clone your fork
@@ -13,8 +13,8 @@ Follow the github instructions. The URL and directory depends on your user name 
 project name you choose. But, it should look somewhat like this:
 
 ```
-git clone git@github.com:markus1978/my-nomad-schema.git
-cd my-nomad-schema
+git clone git@github.com:markus1978/my-nomad-parser.git
+cd my-nomad-parser
 ```
 
 ### Install the dependencies
@@ -54,8 +54,8 @@ nomad parse tests/data/test.archive.yaml --show-archive
 You can now start to develop you schema. Here are a few things that you might want to change:
 
 - The metadata in `nomad_plugin.yaml`.
-- The name of the Python package `nomadschemaexample`. If you want to define multiple plugins, you can nest packages.
-- The name of the example section `ExampleSection`. You will also want to define more than one section.
+- The name of the Python package `nomadparserexample`. If you want to define multiple plugins, you can nest packages.
+- The name of the example section `MyLabExcelSection`. You will also want to define more than one section.
 - When you change module and class names, make sure to update the `nomad_plugin.yaml` accordingly.
 
 To learn more about plugins, how to add them to an Oasis, how to publish them, read our
